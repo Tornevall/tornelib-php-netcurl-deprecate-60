@@ -34,8 +34,17 @@ namespace TorneLIB;
  */
 abstract class NETCURL_IP_PROTOCOLS
 {
+    /**
+     * @deprecated
+     */
     const PROTOCOL_NONE = 0;
+    /**
+     * @deprecated
+     */
     const PROTOCOL_IPV4 = 4;
+    /**
+     * @deprecated
+     */
     const PROTOCOL_IPV6 = 6;
 
     /**

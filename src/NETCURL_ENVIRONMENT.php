@@ -25,7 +25,7 @@
 namespace TorneLIB;
 
 /**
- * Class NETCURL_ENVIRONMENT
+ * Class NETCURL_ENVIRONMENT Obsolete.
  *
  * @package TorneLIB
  * @version 6.1.0
@@ -34,6 +34,12 @@ namespace TorneLIB;
  */
 abstract class NETCURL_ENVIRONMENT
 {
+    /**
+     * @deprecated
+     */
     const ENVIRONMENT_PRODUCTION = 0;
+    /**
+     * @deprecated
+     */
     const ENVIRONMENT_TEST = 1;
 }

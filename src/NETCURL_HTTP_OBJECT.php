@@ -25,7 +25,7 @@
 namespace TorneLIB;
 
 /**
- * Class NETCURL_AUTH_TYPES
+ * Class NETCURL_AUTH_TYPES Obsolete.
  *
  * @package TorneLIB
  * @version 6.1.0
@@ -34,7 +34,6 @@ namespace TorneLIB;
  */
 class NETCURL_HTTP_OBJECT
 {
-
     private $NETCURL_HEADER;
     private $NETCURL_BODY;
     private $NETCURL_CODE;

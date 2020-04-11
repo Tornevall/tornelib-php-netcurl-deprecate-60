@@ -25,7 +25,7 @@
 namespace TorneLIB;
 
 /**
- * Class NETCURL_NETWORK_DRIVERS
+ * Class NETCURL_NETWORK_DRIVERS Obsolete.
  *
  * @package TorneLIB
  * @version 6.1.0
@@ -34,10 +34,25 @@ namespace TorneLIB;
  */
 abstract class NETCURL_NETWORK_DRIVERS
 {
+    /**
+     * @deprecated
+     */
     const DRIVER_NOT_SET = 0;
+    /**
+     * @deprecated
+     */
     const DRIVER_CURL = 1;
+    /**
+     * @deprecated
+     */
     const DRIVER_WORDPRESS = 1000;
+    /**
+     * @deprecated
+     */
     const DRIVER_GUZZLEHTTP = 1001;
+    /**
+     * @deprecated
+     */
     const DRIVER_GUZZLEHTTP_STREAM = 1002;
 
     /**
