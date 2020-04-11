@@ -25,31 +25,28 @@
 namespace TorneLIB;
 
 /**
- * Class NETCURL_POST_DATATYPES
+ * Class NETCURL_NETWORK_DRIVERS
  *
  * @package TorneLIB
  * @version 6.1.0
  * @since 6.0.0
  * @deprecated Deprecated class. Do not use.
  */
-abstract class NETCURL_POST_DATATYPES
+abstract class NETCURL_NETWORK_DRIVERS
 {
-    const DATATYPE_NOT_SET = 0;
-    const DATATYPE_JSON = 1;
-    const DATATYPE_SOAP = 2;
-    const DATATYPE_XML = 3;
-    const DATATYPE_SOAP_XML = 4;
+    const DRIVER_NOT_SET = 0;
+    const DRIVER_CURL = 1;
+    const DRIVER_WORDPRESS = 1000;
+    const DRIVER_GUZZLEHTTP = 1001;
+    const DRIVER_GUZZLEHTTP_STREAM = 1002;
 
     /**
-     * @deprecated Use NETCURL_POST_DATATYPES::DATATYPE_DEFAULT
+     * @deprecated Internal driver should be named DRIVER_CURL
      */
-    const POST_AS_NORMAL = 0;
-    /**
-     * @deprecated Use NETCURL_POST_DATATYPES::DATATYPE_JSON
-     */
-    const POST_AS_JSON = 1;
-    /**
-     * @deprecated Use NETCURL_POST_DATATYPES::DATATYPE_SOAP
-     */
-    const POST_AS_SOAP = 2;
+    const DRIVER_INTERNAL = 1;
+    const DRIVER_SOAPCLIENT = 2;
+
+    /** @var int Using the class itself */
+    const DRIVER_OWN_EXTERNAL = 100;
+
 }

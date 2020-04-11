@@ -25,31 +25,60 @@
 namespace TorneLIB;
 
 /**
- * Class NETCURL_POST_DATATYPES
+ * Class NETCURL_AUTH_TYPES
  *
  * @package TorneLIB
  * @version 6.1.0
  * @since 6.0.0
  * @deprecated Deprecated class. Do not use.
  */
-abstract class NETCURL_POST_DATATYPES
+class NETCURL_HTTP_OBJECT
 {
-    const DATATYPE_NOT_SET = 0;
-    const DATATYPE_JSON = 1;
-    const DATATYPE_SOAP = 2;
-    const DATATYPE_XML = 3;
-    const DATATYPE_SOAP_XML = 4;
 
-    /**
-     * @deprecated Use NETCURL_POST_DATATYPES::DATATYPE_DEFAULT
-     */
-    const POST_AS_NORMAL = 0;
-    /**
-     * @deprecated Use NETCURL_POST_DATATYPES::DATATYPE_JSON
-     */
-    const POST_AS_JSON = 1;
-    /**
-     * @deprecated Use NETCURL_POST_DATATYPES::DATATYPE_SOAP
-     */
-    const POST_AS_SOAP = 2;
+    private $NETCURL_HEADER;
+    private $NETCURL_BODY;
+    private $NETCURL_CODE;
+    private $NETCURL_PARSED;
+    private $NETCURL_URL;
+    private $NETCURL_IP;
+
+    public function __construct($header = [], $body = '', $code = 0, $parsed = '', $url = '', $ip = '')
+    {
+        $this->NETCURL_HEADER = $header;
+        $this->NETCURL_BODY = $body;
+        $this->NETCURL_CODE = $code;
+        $this->NETCURL_PARSED = $parsed;
+        $this->NETCURL_URL = $url;
+        $this->NETCURL_IP = $ip;
+    }
+
+    public function getHeader()
+    {
+        return $this->NETCURL_HEADER;
+    }
+
+    public function getBody()
+    {
+        return $this->NETCURL_BODY;
+    }
+
+    public function getCode()
+    {
+        return $this->NETCURL_CODE;
+    }
+
+    public function getParsed()
+    {
+        return $this->NETCURL_PARSED;
+    }
+
+    public function getUrl()
+    {
+        $this->NETCURL_URL;
+    }
+
+    public function getIp()
+    {
+        return $this->NETCURL_IP;
+    }
 }

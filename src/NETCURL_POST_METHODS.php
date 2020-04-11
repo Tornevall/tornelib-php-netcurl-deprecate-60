@@ -25,31 +25,19 @@
 namespace TorneLIB;
 
 /**
- * Class NETCURL_POST_DATATYPES
+ * Class NETCURL_POST_METHODS
  *
  * @package TorneLIB
  * @version 6.1.0
  * @since 6.0.0
  * @deprecated Deprecated class. Do not use.
  */
-abstract class NETCURL_POST_DATATYPES
+abstract class NETCURL_POST_METHODS
 {
-    const DATATYPE_NOT_SET = 0;
-    const DATATYPE_JSON = 1;
-    const DATATYPE_SOAP = 2;
-    const DATATYPE_XML = 3;
-    const DATATYPE_SOAP_XML = 4;
-
-    /**
-     * @deprecated Use NETCURL_POST_DATATYPES::DATATYPE_DEFAULT
-     */
-    const POST_AS_NORMAL = 0;
-    /**
-     * @deprecated Use NETCURL_POST_DATATYPES::DATATYPE_JSON
-     */
-    const POST_AS_JSON = 1;
-    /**
-     * @deprecated Use NETCURL_POST_DATATYPES::DATATYPE_SOAP
-     */
-    const POST_AS_SOAP = 2;
+    const METHOD_GET = 0;
+    const METHOD_POST = 1;
+    const METHOD_PUT = 2;
+    const METHOD_DELETE = 3;
+    const METHOD_HEAD = 4;
+    const METHOD_REQUEST = 5;
 }
