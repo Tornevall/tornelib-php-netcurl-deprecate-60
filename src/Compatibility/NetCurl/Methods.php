@@ -1,6 +1,6 @@
 <?php
 
-namespace TorneLIB\Netcurl\Compatibility;
+namespace TorneLIB\Compatibility\NetCurl;
 
 abstract class Methods
 {
